@@ -4,10 +4,12 @@
 	#define sc_set_trace(obj) sc_trace(trace_file, obj, obj.name());
 #endif
 
+#ifndef rep
+	#define rep(i, n) for(int i = 0; i < n; i++)
+#endif
 #ifndef rev
 	#define rev(i, n) for(int i = n-1; i >= 0; i--)
 #endif
-
 #ifndef var_print /// variadic print
 	#define var_print
 	template<class T> void print(T what){cout << what;}
