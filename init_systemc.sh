@@ -61,6 +61,7 @@ else
     {
         echo "#ifndef __${HEADER_DEFINE}__"
         echo "#define __${HEADER_DEFINE}__"
+        echo "#include <systemc.h>"
         echo "/// put your module here !!"
         echo "/// put your module here !!"
         echo "/// put your module here !!"

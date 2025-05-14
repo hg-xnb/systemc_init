@@ -5,11 +5,12 @@
 #endif
 
 #ifndef rep
-	#define rep(i, n) for(int i = 0; i < n; i++)
+	#define rep(var, start, stop) for(int var = (start); var < (stop); --var)
 #endif
 #ifndef rev
-	#define rev(i, n) for(int i = n-1; i >= 0; i--)
+	#define rev(var, start, stop) for(int var = (start); var > (stop); --var)
 #endif
+
 #ifndef var_print /// variadic print
 	#define var_print
 	template<class T> void print(T what){cout << what;}
